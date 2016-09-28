@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>True/False - Preventing Robberies</title>
+</head>
+<body  class="js-true-false ">
+	<main>
+		<div class="js-overlay-page overlay">
+	 		<div class="overlay-mask"></div>
+	 		<div class="overlay-content">
+				<h2 class="js-overlay-heading overlay-heading"></h2>
+				<p class="js-overlay-body-copy overlay-body-copy"></p>
+				<button class="js-overlay-close-button button overlay-close-button">Ok</button>
+			</div>
+		</div>
+ 		<section class="container container-true-false" data-audio-intro="">
+ 			<header class="header-true-false">
+								<h1 class="question question-true-false">Drag the item to True if it prevents robberies, False if it does not.</h1>
+			</header>
+			<div class="activity activity-true-false">
+				<div class="js-drop-zone response response-true-false response-negative" data-response="false"><i class="response-icon fa fa-close"></i><div class="response-label">False</div></div>
+				<ul class="answers answers-true-false">
+				    <li class="js-draggable answer answer-true-false is-current" data-correct="true" data-heading-correct="Correct" data-heading-incorrect="Incorrect" data-copy-correct="Locking doors, especially the back door, can help prevent unwanted entry." data-copy-incorrect="Locking doors, especially the back door,  can help prevent unwanted entry.">
+                        Locking doors
+                    </li>
+                    <li class="js-draggable answer answer-true-false" data-correct="false" data-heading-correct="Correct" data-heading-incorrect="Incorrect" data-copy-correct="Keeping large bills in the drawer attracts robbers and risks greater loss of money. Keep bills larger than $10 in the safe." data-copy-incorrect="Keeping large bills in the drawer attracts robbers and risks greater loss of money. Keep bills larger than $10 in the safe.">
+                        Large bills in drawer
+                    </li>
+                    <li class="js-draggable answer answer-true-false" data-correct="false" data-heading-correct="Correct" data-heading-incorrect="Incorrect" data-copy-correct="The back door should be closed and locked when not in use." data-copy-incorrect="The back door should be closed and locked when not in use.">
+                        Keeping back door open
+                    </li>
+                    <li class="js-draggable answer answer-true-false" data-correct="false" data-heading-correct="Correct" data-heading-incorrect="Incorrect" data-copy-correct="Don't be alone.  Work in teams and enter and exit the store in pairs whenever possible." data-copy-incorrect="Don't be alone.  Work in teams and enter and exit the store in pairs whenever possible.">
+                        Working alone</li>
+                    <li class="js-draggable answer answer-true-false" data-correct="true" data-heading-correct="Correct" data-heading-incorrect="Incorrect" data-copy-correct="Counting money in plain sight is asking for trouble." data-copy-incorrect="Counting money in plain sight is asking for trouble.">
+                        Counting money out of sight
+                    </li>
+                    <li class="js-draggable answer answer-true-false" data-correct="true" data-heading-correct="Correct" data-heading-incorrect="Incorrect" data-copy-correct="It might not seem intuitive, but engaging customers puts them in the role of customer, not robber." data-copy-incorrect="It might not seem intuitive, but engaging customers puts them in the role of customer, not robber.">
+                        Engaging customers
+                    </li>
+                </ul>
+				<div class="js-drop-zone response response-true-false response-affirmative" data-response="true"    >
+					<i class="response-icon fa fa-check"></i>
+					<div class="response-label">True</div>
+				</div>
+			</div>
+			<p class="instructions instructions-true-false"><i class="fa fa-arrow-left"></i> Drag left or right <i class="fa fa-arrow-right
+			"></i></p>					</section>
+	</main>
+    <script src="js/base.js"></script>
+</body>
+</html>

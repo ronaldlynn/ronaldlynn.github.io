@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Button Choose - Sanitizing</title>
+</head>
+<body  class="js-button-choose">
+    <main>
+        <div class="js-overlay-page overlay">
+            <div class="overlay-mask"></div>
+            <div class="overlay-content">
+                <h2 class="js-overlay-heading overlay-heading"></h2>
+                <p class="js-overlay-body-copy overlay-body-copy"></p>
+                <button class="js-overlay-close-button button overlay-close-button">Ok</button>
+            </div>
+        </div>
+        <section class="container container-button-choice">
+            <header class="header header-button-choice">
+                <h1 class="question question-button-choice">Choose the correct bucket and towel for sanitizing.</h1>
+            </header>
+            <div class="instructions instructions-button-choice">Click on the image of your choice</div>
+            <div class="column column-1-of-2">
+                <a class="js-clickable clickable-button-choice" data-use-overlay="true" data-feedback-heading="Correct" data-feedback-body="Always use Red Buckets and White Towels for sanitizing."href="#"><img class="image-button-choice" src="images/bucket-red.png" alt="Red bucket with white towel"></a>
+            </div><div class="column column-1-of-2">
+                <a class="js-clickable clickable-button-choice" data-use-overlay="true" data-feedback-heading="Incorrect" data-feedback-body="Always use Red Buckets and White Towels for sanitizing."href="#"><img class="image-button-choice" src="images/bucket-green.png" alt="Green bucket with blue towel"></a>
+            </div>
+        </section>
+    </main>
+    <script src="js/base.js"></script>
+</body>
+</html>
