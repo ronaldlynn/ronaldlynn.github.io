@@ -12073,7 +12073,7 @@ OrderSort.prototype.checkResponses = function () {
 
         self.pageOverlay.$overlayBadge.css('width', '10em');
         self.pageOverlay.setHeading('Correct');
-        self.pageOverlay.setBodyCopy('Please click Next to continue.');
+        self.pageOverlay.setBodyCopy('Please click the browser&lsquo;s back button to continue.');
         self.pageOverlay.hideCloseButton();
         self.pageOverlay.show();
         $(window).trigger('audio:play_outro');
@@ -12141,7 +12141,7 @@ TryAgain.prototype.checkAnswer = function ($target) {
         feedback = {
             badgeUrl: '/common/images/greatJob.png',
             headingCopy: 'Congratulations!',
-            bodyCopy: 'Please click Next to continue.'
+            bodyCopy: 'Please click the browser&lsquo;s back button to continue.'
         };
 
         $(window)
