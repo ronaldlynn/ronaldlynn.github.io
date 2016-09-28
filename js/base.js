@@ -11593,7 +11593,7 @@ var TrueFalse = function (options) {
                 pageOverlay.removeClass('is-correct');
                 pageOverlay.$overlayBadge.hide();
                 pageOverlay.setHeading('Exercise Completed');
-                pageOverlay.setBodyCopy('Click the Next button to continue');
+                pageOverlay.setBodyCopy('Click the browser&lsquo;s back button to continue');
                 pageOverlay.show();
                 pageOverlay.hideCloseButton();
                 pageOverlay.$overlay.off('overlay:hidden');
