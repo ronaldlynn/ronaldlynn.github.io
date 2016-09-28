@@ -2287,7 +2287,7 @@ body {
 .instructions {
   margin: 0;
   font-size: 0.875em;
-  font-family: 'Proxima Nova Bold'; }
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif; }
 
 .instructions-icon {
   display: inline-block;
