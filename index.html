@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!--Styles I don't want in the main CSS. I want to limit HTTP request/response cycles, so they're here for now.-->
     <style>
         .container-index {
             color: #222222;
+            margin: 0 1em;
             max-width: 60rem;
             padding-top: 2rem;
         }
@@ -93,7 +96,7 @@
             <header>
                 <h1>Interactive Exercises</h1>
             </header>
-            <p>These exercises represent standardized client content from Expand Interactive, where I worked as a frontend developer. Designs were created as a team, at the whiteboard or in the browser.</p>
+            <p>These exercises represent standardized client content from Expand Interactive, where I worked as a front end developer. Designs were created as a team, at the whiteboard or in the browser.</p>
             <p>All exercises were written with proprietary autoplay audio. This has been removed at the request of the content owner.</p>
             <p>All drag and drop interactions occur only in one direction for better voice command accessibility.</p>
             <p>Text-on-screen contrast passes WCAG AA and AAA guidelines.</p>
@@ -118,7 +121,7 @@
         </section>
     </main>
     <footer class="footer-index">
-        <small>Copyright &copy;2016, Ronald Lynn McClellan. All rights reserved.</small>
+        <small>&copy;2016 Ronald Lynn McClellan. All rights reserved.</small>
     </footer>
 </body>
 </html>
