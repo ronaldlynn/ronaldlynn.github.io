@@ -3838,3 +3838,72 @@ body {
 
 .robber-scenario {
   background-image: url("/common/images/robber-scenario-bg.png"); }
+
+  .container-index {
+      color: #222222;
+      max-width: 60rem;
+      padding: 1em;
+  }
+
+  .container-index>header {
+      border-bottom: 1px solid #CCCCCC;
+      margin-bottom: 2em;
+  }
+
+  .container-index>header h1 {
+      font-size: 2.25em;
+      font-weight: 100;
+      margin-top: 0;
+  }
+
+  .container-index header img {
+      width: 20%;
+  }
+
+  .container-index h2 {
+      font-weight: normal;
+  }
+  .container-index .section ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .container-index li {
+      margin-right: 0.75em;
+  }
+
+  .container-index a {
+      border: 2px solid;
+      border-radius: 0.5em;
+      color: #222222;
+      display: block;
+      font-size: 1.125em;
+      margin: 0 0.5em 0.5em 0;
+      padding: 0.33em;
+      text-align: center;
+      text-decoration: none;
+  }
+
+  .container-index a:hover {
+      background-color: #222222;
+      border: 2px solid #222222;
+      color: #FFFFFF;
+  }
+
+  .footer-index {
+      padding: 2em;
+      text-align: center;
+  }
+
+  @media (min-width: 640px) {
+
+      .container-index>header h1 {
+          margin-top: 0.5em;
+      }
+
+      .container-index a {
+          display: inline-block;
+          text-align: inherit;
+      }
+  }
