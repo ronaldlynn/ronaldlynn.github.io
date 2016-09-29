@@ -11593,7 +11593,7 @@ var TrueFalse = function (options) {
                 pageOverlay.removeClass('is-correct');
                 pageOverlay.$overlayBadge.hide();
                 pageOverlay.setHeading('Exercise Completed');
-                pageOverlay.setBodyCopy('Click the browser&lsquo;s back button to continue');
+                pageOverlay.setBodyCopy('Click the browser\'s back button to continue');
                 pageOverlay.show();
                 pageOverlay.hideCloseButton();
                 pageOverlay.$overlay.off('overlay:hidden');
@@ -11705,6 +11705,7 @@ var ButtonChoice = function (options) {
     self.$clickableCollection
         .on('click', function (event) {
             var $this = $(this);
+            event.preventDefault();
             self.scoreResponse($this);
         });
 };
@@ -11733,7 +11734,7 @@ ButtonChoice.prototype.scoreResponse = function ($target) {
 
         pageOverlay.removeClass('is-correct');
         pageOverlay.setHeading('Exercise Completed');
-        pageOverlay.setBodyCopy('Click the Next button to continue');
+        pageOverlay.setBodyCopy('Click the browser\'s back button to continue');
         pageOverlay.show();
         pageOverlay.hideCloseButton();
         pageOverlay.$overlay.off('overlay:hidden');
@@ -12017,7 +12018,9 @@ OrderSort.prototype.init = function () {
         }
     });
     self.renumber();
-    $('.button').on('click', function () {
+    $('.button').on('click', function (event) {
+
+        event.preventDefault();
         self.checkResponses();
     });
 };
@@ -12073,7 +12076,7 @@ OrderSort.prototype.checkResponses = function () {
 
         self.pageOverlay.$overlayBadge.css('width', '10em');
         self.pageOverlay.setHeading('Correct');
-        self.pageOverlay.setBodyCopy('Please click the browser&lsquo;s back button to continue.');
+        self.pageOverlay.setBodyCopy('Please click the browser\'s back button to continue.');
         self.pageOverlay.hideCloseButton();
         self.pageOverlay.show();
         $(window).trigger('audio:play_outro');
@@ -12141,7 +12144,7 @@ TryAgain.prototype.checkAnswer = function ($target) {
         feedback = {
             badgeUrl: '/common/images/greatJob.png',
             headingCopy: 'Congratulations!',
-            bodyCopy: 'Please click the browser&lsquo;s back button to continue.'
+            bodyCopy: 'Please click the browser back button to continue.'
         };
 
         $(window)
